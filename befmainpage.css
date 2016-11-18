@@ -1,0 +1,235 @@
+body,div,footer,header,p,aside{
+    margin:0 auto;
+    padding: 0;
+}
+@font-face{
+    font-family:Lato;
+    src: url(Lato-Light.ttf);
+}
+@font-face{
+    font-family:OpenSansNormal;
+    src:url(OepnSans-Regular.ttf);
+}
+@font-face{
+    font-family:OpenSans;
+    src:url(OpenSans-CondLight.ttf);
+}
+@font-face{
+    font-family: Oswald;
+    src: url(Oswald-Regular.ttf);
+}
+@font-face{
+    font-family:Lora;
+    src:url(Lora-Regular.ttf);
+}
+figure{
+    width: 3000px;
+    margin: 0 auto;
+}
+#img{
+    max-width: 100%; 
+    height: 100%; 
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+#phello{
+    font-family: OpenSans;
+    font-weight: 900;
+    font-size: 20px;
+}
+#h1-1{
+    font-size: 120px;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    color: ghostwhite;
+    z-index: 1;
+}
+#h1-2{
+    font-size: 120px;
+    position: absolute;
+    top: 146%;
+    left: 46%;
+    color: ghostwhite;
+    z-index: 1;
+}
+body{
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:0.5s;
+}
+
+a:hover{
+    color:#b69c6a;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    animation: 18s slidy infinite; 
+    padding-top: 20px;
+}
+#containersetwidth{
+    width: 76%;
+    margin: 0 auto;
+}
+#logocontainer{
+    padding-top: 20px;
+    height: auto;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+#logosize{
+    width: 76%;
+    display: block;
+    margin: 0 auto;
+}
+#articlecontainer{
+    width: 70%;
+    height: auto;
+    background-color: ;
+    float:left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+#divarticle {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#b69c6a;
+    font-family: OpenSans;
+        border-bottom: 2px solid #b69c6a;
+}
+#articlephoto{
+    width:70%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+#asidearticle{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14;
+    line-height: 18px;
+    font-family: OpenSansNormal,Arial;
+}
+#articlecontent{
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: OpenSansNormal,Arial;
+
+}
+aside{
+    width: 28%;
+    float:right;
+    margin-top: 20px;
+}
+#asidephoto{
+    width:70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+
+}
+#asidephoto:hover{
+    transform: scale(1.5);
+    filter: drop-shadow(5px 5px 5px #b69c6a);
+}
+
+#endinglogocontainer{
+    background-color: #303030;
+    height: auto;
+    width: 100%;
+}
+#endinglogosize{
+    height: 20%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+}
+label:hover {
+  color: #000;
+}
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 3%;
+  height: 3%;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+footer{
+    clear: both;
+}
