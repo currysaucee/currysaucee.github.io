@@ -27,11 +27,7 @@ body,div,footer,header,p,aside{
     src:url(Lora-Regular.ttf);
 }
 /* font */
-p{
-    font-family: OpenSansNormal;
-    font-size: 16px;
-    color: #b69c6a;
-}
+
 /* navigation */
 .navul {
     list-style-type: none;
