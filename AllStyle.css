@@ -80,7 +80,7 @@ aside{
     transition: 0.5s;
 
 }
-#asidephoto:hover{
+.asidephoto:hover{
     transform: scale(1.5);
     filter: drop-shadow(5px 5px 5px #b69c6a);
 }
