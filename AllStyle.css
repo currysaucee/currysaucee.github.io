@@ -27,6 +27,14 @@ body,div,footer,header,p,aside{
     src:url(Lora-Regular.ttf);
 }
 /* font */
+body{
+    background:#F4F4F4;
+}
+#whatpage{
+    font-family: OpenSans,Arial;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 /* navigation */
 .navul {
@@ -48,7 +56,7 @@ body,div,footer,header,p,aside{
     transition:0.5s;
 }
 
-.nava:hover{
+.navli a:hover{
     color:#b69c6a;
 }
 /* navigation stuff */
@@ -58,6 +66,10 @@ body,div,footer,header,p,aside{
     font-family: OpenSans;
     font-weight: 900;
     font-size: 20px;
+    transition:1s;
+}
+.phello:hover{
+    text-decoration: underline;
 }
 .asidearticle{
     padding-top: 10px;
@@ -78,12 +90,14 @@ aside{
     margin-left: auto;
     margin-right: auto;
     transition: 0.5s;
-
 }
 .asidephoto:hover{
     transform: scale(1.5);
     filter: drop-shadow(5px 5px 5px #b69c6a);
 }
+/* aside stuff */
+
+
 #AllContainer{
     margin-top: 5%;
     height: auto;
@@ -222,4 +236,19 @@ label::before {
 
 footer{
     clear: both;
+}
+#backtotopbutton{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    width: 2%;
+    height: 3%;
+    transition: 0.3s;
+    border-radius: 20px;
+    border-color: none;
+    background:#b69c6a;
+    padding:0.5%;
+}
+#backtotopbutton:hover{
+        transform: scale(1.4);
+    background: #DCD0C0;
 }

@@ -1,9 +1,16 @@
-<html>
+<!DOCTYPE HTML>
+<html lang = "en">
     <head>
+        <title>
+            CurrySauce: Contact Me
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="AllStyle.css">
+        <link rel= "shortcut icon" href="logoshortcnfm.ico">
     </head>
     <style>
-        .message{
+        #namemessage{
             width: 26%;
             height:5%;
             border: 1px solid #ccc;
@@ -13,8 +20,9 @@
             line-height: normal;
             box-sizing: border-box;
             border-radius: 2px;
+            resize: none;
         }
-                #messagemessage{
+        #messagemessage{
             width: 56%;
             height:30%;
             border: 1px solid #ccc;
@@ -24,8 +32,21 @@
             line-height: normal;
             box-sizing: border-box;
             border-radius: 2px;
+            resize: none;
         }
-        textarea{
+        #emailmessage{
+            width: 36%;
+            height:5%;
+            border: 1px solid #ccc;
+            background: #fafafa;
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: normal;
+            box-sizing: border-box;
+            border-radius: 2px;
+            resize: none;
+        }
+        #namearea{
             overflow: auto;
             vertical-align: top;
             text-align: start;
@@ -33,28 +54,45 @@
             margin-top: 0;
             margin-left:0;
         }
-        #namearea{
-                        overflow: auto;
-            vertical-align: top;
-            text-align: start;
-            resize: none;
-            margin-top: 0;
-            margin-left:0;
+        button{
+            margin-bottom: 7%;
         }
     </style>
     <body>
-        <form action = "action_page.php">
-            <br>
-            <p>Name: </p> 
-            <textarea class = "message" id = "textarea" name = "name" ></textarea>
-            <br>
-            <p>Email: </p>
-            <textarea  class = "message" id = "textarea" name = "email"></textarea>
-            <br>
-            <p>Message: </p>
-            <textarea id = "messagemessage" id = "textarea" name = "message"  rows="10" ></textarea>
-            <br><br>
-            <input type = "submit" value="submit">
-        </form>
+        <nav>
+            <ul class = "navul">
+                <li class = "navli"><a href = "index.html"> Home </a></li>
+                <li class = "navli"><a href="Photos.html"> Photos </a></li>
+                <li class = "navli"><a href="tryforforms.html"> Contact Me </a></li>
+                <li class ="navli"><a href ="https://www.instagram.com/currysaucee_/">Instagram</a></li>
+            </ul>
+        </nav>
+            <h1 id = "whatpage"># c o n t a c t   m e</h1>
+        <header>
+            <section id = "logotopcontainer">
+                <a href ="index.html">
+                    <img id = "logosize" src="betterlogomaybe.png" alt="Logo">
+                </a>
+            </section>
+        </header>
+        <section id = "containersetwidth">
+            <form action = "action_page.php">
+                <br>
+                <p>Name: </p> 
+                <textarea id = "namemessage" rows="1"></textarea>
+                <br>
+                <p>Email: </p>
+                <textarea  id = "emailmessage" rows="1"></textarea>
+                <br>
+                <p>Message: </p>
+                <textarea id = "messagemessage" name rows="10"></textarea>
+                <br><br>
+                <button  type="button" onClick="window.location.reload();">Submit</button>
+            </form>
+
+        </section>
     </body>
+    <footer id = "footercontainer">
+        <img id = "endlogosize" src = "confirmendlogotransparentupdated.png" alt="End logo">
+    </footer>
 </html>
