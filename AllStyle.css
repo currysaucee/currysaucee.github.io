@@ -163,7 +163,7 @@ footer{
 
 /* start of aside stuff in index.html*/
 .phello{
-    font-family: OpenSans,Arial,sans-serif;
+    font-family: OpenSans,OpenSansNormal,Lato,Arial,sans-serif;
     font-weight: 900;
     font-size: 20px;
     transition:1s;
@@ -176,7 +176,7 @@ footer{
     text-align: center;
     font-size: 14;
     line-height: 18px;
-    font-family: OpenSansNormal,Arial,Monaco;
+    font-family: OpenSansNormal,Lato,Arial,Monaco;
 }
 aside{
     width: 28%;
@@ -345,5 +345,9 @@ label::before {
         #submitbutton{
             margin-bottom: 7%;
             margin-top: 3%;
+            margin-left: 5%;
         }
+form{
+    margin-left: 5%;
+}
 /* end of tryforforms.html stuff */
