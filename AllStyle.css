@@ -5,7 +5,7 @@ body,div,footer,header,p,aside{
 }
 /* reset */
 
-/* font */
+/* start of font */
 @font-face{
     font-family:Lato;
     src: url(Lato-Light.ttf);
@@ -26,7 +26,9 @@ body,div,footer,header,p,aside{
     font-family:Lora;
     src:url(Lora-Regular.ttf);
 }
-/* font */
+/* end of font */
+
+/* start of general usage */
 body{
     background:#F4F4F4;
 }
@@ -35,8 +37,58 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
+    #AllContainer{
+    margin-top: 5%;
+    height: auto;
+    margin-top:5%;
+}
+footer{
+    clear: both;
+}
 
-/* navigation */
+/* start of logo stuff */
+#logotopcontainer{
+    padding-top: 3%;
+    height: auto;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3%;
+}
+#logosizeforother{
+    display: block;
+    margin:0 auto;
+    width: 20%;
+    height: 10%;
+}
+#endlogosize{
+    width: 12%;
+    display: block;
+    margin: 0 auto;
+}
+#logosizeforhome{
+    display:block;
+    margin: 0 auto;
+}
+/* end of logo stuff */
+
+/* start of Back to top Button stuff */
+#backtotopbutton{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    width: 2%;
+    height: 3%;
+    transition: 0.3s;
+    border-radius: 20px;
+    border-color: none;
+    background:#b69c6a;
+    padding:0.5%;
+}
+#backtotopbutton:hover{
+        transform: scale(1.4);
+    background: #DCD0C0;
+}
+/* end of Back to top Button stuff */
+
+/* start of navigation stuff */
 .navul {
     list-style-type: none;
     overflow: hidden;
@@ -60,20 +112,56 @@ body{
     color:#b69c6a;
     transform: translate(0,-3px);
 }
+/* end of navigation stuff */
 
-#bucketlistok{
-    list-style-type: disc;
-    font-family: Oswald,sans-serif;
-    color:#C0B283;
+#footercontainer{
+    background-color: #303030;
+    padding-top: 2%;
+    height: auto;
+    padding-bottom: 2%;
 }
-#bucketlistnotok{
-    list-style-type: circle;
-    font-family: Oswald,sans-serif;
-    color:#373737;
+#containersetwidth{
+    width: 76%;
+    margin: 0 auto;
 }
-/* navigation stuff */
+#articlecontainer{
+    width: 70%;
+    height: auto;
+    float:left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* end of general usage */
 
-/* aside stuff */
+/*start of main page stuff in index.html*/
+.divarticle {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#b69c6a;
+    font-family: OpenSans,Helvetica,sans-serif;
+        border-bottom: 2px solid #b69c6a;
+}
+#articlephoto{
+    width:70%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.articlecontent{
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: OpenSansNormal,Arial;
+}
+/*end of main page stuff in index.html */
+
+/* start of aside stuff in index.html*/
 .phello{
     font-family: OpenSans,Arial,sans-serif;
     font-weight: 900;
@@ -107,14 +195,9 @@ aside{
     transform: scale(1.5);
     filter: drop-shadow(5px 5px 5px #b69c6a);
 }
-/* aside stuff */
+/* end of aside stuff in index.html */
 
-/* Images stuff */
-#AllContainer{
-    margin-top: 5%;
-    height: auto;
-    margin-top:5%;
-}
+/* start of photos stuff in Photos.html */
 #row{
     margin-left: 7%;
 }
@@ -135,6 +218,10 @@ aside{
 #row .image:hover {
     opacity: 1;
 }
+
+/* end of photos stuff in Photos.html */
+
+/* start of bucket list stuff in bucklist.html*/
 .imagebucketlist{
     height:5%;
     width:90%;
@@ -162,6 +249,9 @@ aside{
     text-transform: uppercase;
     font-size: 21px;
 }
+/* end of bucket list stuff in bucklist.html*/
+
+/* start of about me stuff in aboutme.html*/
 #aboutmephoto{
     width: 40%;
     margin-bottom: 5%;
@@ -179,59 +269,9 @@ aside{
     font-family: OpenSansNormal,Arial;
     margin-right: 10%;
 }
-/* Images stuff */
+/* end of about me stuff in aboutme.html*/
 
-
-/* containers */
-#containersetwidth{
-    width: 76%;
-    margin: 0 auto;
-}
-
-#articlecontainer{
-    width: 70%;
-    height: auto;
-    float:left;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-#footercontainer{
-    background-color: #303030;
-    padding-top: 2%;
-    height: auto;
-    padding-bottom: 2%;
-}
-/* containers */
-
-/*main div stuff */
-.divarticle {
-    padding-top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color:#b69c6a;
-    font-family: OpenSans,Helvetica,sans-serif;
-        border-bottom: 2px solid #b69c6a;
-}
-#articlephoto{
-    width:70%;
-    height: auto;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    
-}
-.articlecontent{
-    padding-top: 10px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: OpenSansNormal,Arial;
-}
-/*main div stuff */
-
-/* stuff for hiddent contents */
+/* start of stuff for hidden contents in index.html*/
 input {
   display: none;
   visibility: hidden;
@@ -270,52 +310,9 @@ label::before {
 #toggle:checked ~ label::before {
   content: "-";
 }
-/* stuff for hiddent contents */
+/* end of stuff for hidden contents in index.thml*/
 
-/* logo stuff */
-#logotopcontainer{
-    padding-top: 3%;
-    height: auto;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 3%;
-}
-#logosizeforother{
-    display: block;
-    margin:0 auto;
-    width: 20%;
-    height: 10%;
-}
-#endlogosize{
-    width: 12%;
-    display: block;
-    margin: 0 auto;
-}
-#logosizeforhome{
-    display:block;
-    margin: 0 auto;
-}
-/* logo stuff */
-
-footer{
-    clear: both;
-}
-#backtotopbutton{
-    margin-top: 0.5%;
-    margin-left: 0.5%;
-    width: 2%;
-    height: 3%;
-    transition: 0.3s;
-    border-radius: 20px;
-    border-color: none;
-    background:#b69c6a;
-    padding:0.5%;
-}
-#backtotopbutton:hover{
-        transform: scale(1.4);
-    background: #DCD0C0;
-}
-
-/* forms stuff */
+/* start of tryforforms.html stuff */
         #namemessage{
             width: 26%;
             height:5%;
@@ -355,4 +352,4 @@ footer{
         #submitbutton{
             margin-bottom: 7%;
         }
-/* forms stuff */
+/* end of tryforforms.html stuff */
