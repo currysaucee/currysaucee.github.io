@@ -226,22 +226,15 @@ aside{
     height:5%;
     width:90%;
     margin:0 auto;
-    float:left;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 .h1bucketlist{
     text-align: center;
-    color:#F4F4F4;
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 20%;
+    color:#303030;
     padding-bottom: 0.1%;
-    border-bottom: 2px solid #F4F4F4;
-    visibility: hidden;
-}
-.imagebucketlist:hover + .h1bucketlist{
-    visibility:visible;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 #bucketlistinstruction{
     text-align: center;
@@ -351,5 +344,6 @@ label::before {
         }
         #submitbutton{
             margin-bottom: 7%;
+            margin-top: 3%;
         }
 /* end of tryforforms.html stuff */
