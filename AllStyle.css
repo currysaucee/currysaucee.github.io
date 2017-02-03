@@ -1,7 +1,12 @@
 /* reset */
-body,div,footer,header,p,aside{
-    margin:0 auto;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 /* reset */
 
@@ -36,8 +41,10 @@ body{
     font-family: Oswald,Arial,serif;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 10%;
+    font-size: 60px;
 }
-    #AllContainer{
+#AllContainer{
     margin-top: 5%;
     height: auto;
     margin-top:5%;
@@ -53,18 +60,12 @@ footer{
     border-bottom: 2px solid #eee;
     padding-bottom: 3%;
 }
-#logosizeforother{
-    display: block;
-    margin:0 auto;
-    width: 20%;
-    height: 10%;
-}
 #endlogosize{
     width: 12%;
     display: block;
     margin: 0 auto;
 }
-#logosizeforhome{
+#logosizeTop{
     display:block;
     margin: 0 auto;
 }
@@ -83,23 +84,31 @@ footer{
     padding:0.5%;
 }
 #backtotopbutton:hover{
-        transform: scale(1.4);
+    transform: scale(1.4);
     background: #DCD0C0;
 }
 /* end of Back to top Button stuff */
 
 /* start of navigation stuff */
-.navul {
+nav.sitenavigation{
+    position: fixed;
+    width:100%;
+    top:0;
+}
+
+div.navigation-menu-button{
+    display: none;
+}
+.sitenavigation ul {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
 }
-
-.navli {
+.sitenavigation li {
     float: left;
 }
 
-.navli a {
+.sitenavigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -108,7 +117,7 @@ footer{
     transition:0.5s;
 }
 
-.navli a:hover{
+.sitenavigation li a:hover{
     color:#b69c6a;
     transform: translate(0,-3px);
 }
@@ -124,7 +133,7 @@ footer{
     width: 76%;
     margin: 0 auto;
 }
-#articlecontainer{
+main{
     width: 70%;
     height: auto;
     float:left;
@@ -141,7 +150,7 @@ footer{
     letter-spacing: 2px;
     color:#b69c6a;
     font-family: OpenSans,Helvetica,sans-serif;
-        border-bottom: 2px solid #b69c6a;
+    border-bottom: 2px solid #b69c6a;
 }
 #articlephoto{
     width:70%;
@@ -150,7 +159,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    
+
 }
 .articlecontent{
     padding-top: 10px;
@@ -255,7 +264,7 @@ aside{
     transform: scale(1.4);
 }
 .aboutmearticle{
-        padding-top: 10px;
+    padding-top: 10px;
     text-align: center;
     margin: 0 auto;
     font-size: 16px;
@@ -266,88 +275,135 @@ aside{
 
 /* start of stuff for hidden contents in index.html*/
 input {
-  display: none;
-  visibility: hidden;
+    display: none;
+    visibility: hidden;
 }
 label {
-  display: block;
-  padding: 0.5em;
-  text-align: center;
-  border-bottom: 1px solid #CCC;
-  color: #666;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+    color: #666;
 }
 label:hover {
-  color: #000;
+    color: #000;
 }
 label::before {
-  font-family: Consolas, monaco, monospace;
-  font-weight: bold;
-  font-size: 15px;
-  content: "+";
-  vertical-align: text-top;
-  display: inline-block;
-  width: 3%;
-  height: 3%;
-  margin-right: 3px;
-  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    content: "+";
+    vertical-align: text-top;
+    display: inline-block;
+    width: 3%;
+    height: 3%;
+    margin-right: 3px;
+    background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
 }
 #expand {
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.5s;
-  color: #FFF;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+    color: #FFF;
 }
 #toggle:checked ~ #expand {
-  height: 250px;
+    height: 250px;
 }
 #toggle:checked ~ label::before {
-  content: "-";
+    content: "-";
 }
 /* end of stuff for hidden contents in index.thml*/
 
 /* start of tryforforms.html stuff */
-        #namemessage{
-            width: 26%;
-            height:5%;
-            border: 1px solid #ccc;
-            background: #fafafa;
-            font-family: sans-serif;
-            font-size: 20px;
-            line-height: normal;
-            box-sizing: border-box;
-            border-radius: 2px;
-            resize: none;
-        }
-        #messagemessage{
-            width: 56%;
-            height:30%;
-            border: 1px solid #ccc;
-            background: #fafafa;
-            font-family: sans-serif;
-            font-size: 20px;
-            line-height: normal;
-            box-sizing: border-box;
-            border-radius: 2px;
-            resize: none;
-        }
-        #emailmessage{
-            width: 36%;
-            height:5%;
-            border: 1px solid #ccc;
-            background: #fafafa;
-            font-family: sans-serif;
-            font-size: 20px;
-            line-height: normal;
-            box-sizing: border-box;
-            border-radius: 2px;
-            resize: none;
-        }
-        #submitbutton{
-            margin-bottom: 7%;
-            margin-top: 3%;
-            margin-left: 5%;
-        }
+#namemessage{
+    width: 26%;
+    height:5%;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+}
+#messagemessage{
+    width: 56%;
+    height:30%;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+}
+#emailmessage{
+    width: 36%;
+    height:5%;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+}
+#submitbutton{
+    margin-bottom: 7%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
 form{
     margin-left: 5%;
 }
 /* end of tryforforms.html stuff */
+
+.blogpost{
+    margin: 5%;
+}
+
+
+
+
+/*screen size of lesser than 730px */
+@media screen and (max-width:730px){
+    
+    nav.sitenavigation{
+        width: 20%;
+        float: right;
+        position: relative;
+    }
+    div.navigation-menu-button{
+        float: right;
+        display: block;
+        position: relative;
+    }
+    .sitenavigation ul{
+        float: right;
+        position: relative;
+        margin: 0;
+    }
+    #whatpage{
+        margin-top:5%;
+        font-size: 50px;
+    }
+    #logosizeforhome{
+        width: 70%;
+        height: 70%;
+    }
+    aside{
+        display: none;
+    }
+    main{
+            width: 85%;
+    height: auto;
+    float:left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+    header{
+        display: none;
+    }
