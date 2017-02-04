@@ -75,17 +75,18 @@ footer{
 #backtotopbutton{
     margin-top: 0.5%;
     margin-left: 0.5%;
-    width: 2%;
-    height: 3%;
     transition: 0.3s;
+    width: 10%;
     border-radius: 20px;
     border-color: none;
-    background:#b69c6a;
+    background:#DCD0C0;
     padding:0.5%;
+    position: fixed;
+    
 }
 #backtotopbutton:hover{
     transform: scale(1.4);
-    background: #DCD0C0;
+    background: #b69c6a;
 }
 /* end of Back to top Button stuff */
 
@@ -383,6 +384,7 @@ form{
         width: 15%;
         float: right;
         position: relative;
+        z-index: 10
     }
     div.navigation-menu-button{
         float: right;
@@ -417,5 +419,8 @@ form{
     margin-bottom: 5%;
     }
     header{
+        display: none;
+    }
+    #footercontainer{
         display: none;
     }
