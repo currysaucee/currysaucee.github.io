@@ -2,59 +2,99 @@
 <html lang="en">
     <head>
         <title>
-            CurrySauce: Photos
+            CurrySauce: Gallery
         </title>
-        <meta charset="utf-8">
+          <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="AllStyle.css">
         <link rel= "shortcut icon" href="logoshortcnfm.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+        <!-- jquery & iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <a name="top"></a>
-        <nav>
-            <ul class = "navul">
-                <li class = "navli"><a href = "index.html"> Home </a></li>
-                <li class = "navli"><a href="Photos.html"> Photos </a></li>
-                <li class = "navli"><a href="tryforforms.html"> Contact Me </a></li>
-                <li class = "navli"><a href="bucklist.html"> Bucket List </a></li>
-                <li class = "navli"><a href="aboutme.html"> About Me </a></li>
-                <li class ="navli"><a target="blank" href ="https://www.instagram.com/currysaucee_/">Instagram</a></li>
-                <li class ="navli"><a target="blank" href ="https://twitter.com/heybrickk">Twitter</a></li>
+        <body class="drawer drawer--right">
+
+        <nav class="sitenavigation" class="desktopnav">
+            <ul>
+                <li><a href = "index.html"> Home </a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="myphotos.html">My Photo</a>
+                        <a href="Photos.html">Food Photo</a>
+                    </div>
+                </li>
+                <li><a href="tryforforms.html"> Contact Me </a></li>
+                <li><a href="aboutme.html"> About Me </a></li>
+                <li><a target="blank" href ="https://www.instagram.com/alwaysjon_/">Instagram</a></li>
+                <li><a target="blank" href ="https://twitter.com/heybrickk">Twitter</a></li>
+            </ul> 
+        </nav>
+
+        <header role="banner" class="mobilenav">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="./index.html">Navigation</a></li>
+                    <li><a class="drawer-menu-item" href="index.html">Home</a></li>
+                    <li class="drawer-dropdown">
+                        <a class="drawer-menu-item" data-target="#" href="gallery.html" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Gallery <span class="drawer-caret"></span>
+                        </a>
+                        <ul class="drawer-dropdown-menu">
+                            <li><a class="drawer-dropdown-menu-item" href="myphotos.html">My Photo</a></li>
+                            <li><a class="drawer-dropdown-menu-item" href="Photos.html">Food Photo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="drawer-menu-item" href="tryforforms.html">Contact Me</a></li>
+                    <li><a class="drawer-menu-item" href="aboutme.html">About Me</a></li>
+                    <li><a class="drawer-menu-item" target="blank" href ="https://www.instagram.com/alwaysjon_/">Instagram</a></li>
+                    <li><a class="drawer-menu-item" target="blank" href ="https://twitter.com/heybrickk">Twitter</a></li>
+
+                </ul>
+                </li>
             </ul>
         </nav>
-        <h1 id = "whatpage"># p h o t o s</h1>
-        <main id = "containersetwidth">
+    </header>
+        <h1 id = "whatpage"># f o o d</h1>
             <header>
                 <figure id = "logotopcontainer">
                     <a href = "index.html">
-                        <img id = "logosizeforother" src="betterlogomaybe.png" alt="Logo">
+                        <img id = "logosizeTop" src="betterlogomaybe.png" alt="Logo">
                     </a>
                 </figure>
             </header>
 
             <section id = "AllContainer">
-                <figure id = "row">
+                <figure id = "row" class="cap-right">
                     <img class = "image" src="food2.jpeg" alt="Pasta w Meatball at Ikea">
-                    <img class = "image" src="food1.jpeg" alt="Blackball Dessert">
-                    <img class = "image" src="food3.jpeg" alt="Meatball at Ikea">
-                    <img class = "image" src ="food4.jpeg" alt="Feast at Ikea">
-                    <img class = "image" src ="food5.jpeg" alt="Birthday Lunch at Ikea">
-                    <img class = "image" src ="food6.jpeg" alt="Steak at Cafe">
-                    <img class = "image" src ="food8.jpeg" alt="Nacho Cheese at Cafe">
-                    <img class = "image" src ="food7.jpeg" alt="llao llao">
-                    <img class = "image" src ="food9.jpeg" alt="Churros at Cafe">
+                    <img class = "image" src="food18.jpeg" alt="Bimbimbap at a Cafe">
+                    <img class = "image" src ="food4.jpeg" alt="Feast at Ikea" style="clear:both">
                     <img class = "image" src ="food10.jpeg" alt="Feast at SPOON">
                     <img class = "image" src ="food13.jpeg" alt="Seafood Bae at Punggol">
                     <img class = "image" src ="food11.jpeg" alt="Must try at SPOON">
-
+                    <figcaption>I FORGOT WHERE I ATE THEM ALREADY HAHA SORRY! BUT THEY ARE ALL GREAT FOOD</figcaption>
+                    <h3 id="foodmobiletext">I FORGOT WHERE I ATE THEM ALREADY BUT THEY WERE ALL FANTASTIC THAT'S WHY THEY MADE IT HERE!</h3>
                 </figure>
             </section>
         </main>
         <footer id = "footercontainer">
             <img id = "endlogosize" src = "confirmendlogotransparentupdated.png" alt="End logo">
         </footer>
-        <a href ="#top">
-            <img id = "backtotopbutton" src="toparrow.png" alt="arrow to top">
-        </a>
+<section id = "backtotop">
+    <a href ="#top" class="scrollToTop">Back to top
+        <img src="double%20arrow%20up.png" width="10" height="14">
+    </a>
+</section>
+    <script src="script.js"></script>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="drawer.min.js" charset="utf-8"></script>
     </body>
 </html>

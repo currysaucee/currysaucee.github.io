@@ -1,10 +1,12 @@
-<!DOCTYPE HTML>
-<html lang = "en">
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
         <title>
-            CurrySauce: Contact Me
+            CurrySauce: Submission
         </title>
-          <meta charset="utf-8">
+
+         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="AllStyle.css">
         <link rel= "shortcut icon" href="logoshortcnfm.ico">
@@ -62,7 +64,7 @@
             </ul>
         </nav>
     </header>
-        <h1 id = "whatpage"># c o n t a c t</h1>
+        <h1 id = "whatpage"># s u b m i t</h1>
             <header>
                 <figure id = "logotopcontainer">
                     <a href = "index.html">
@@ -70,39 +72,32 @@
                     </a>
                 </figure>
             </header>
-            <form action="results.html">
-                <fieldset>
-                <label for="nameinput">
-                <p>Name</p>
-                <input type="text" name="name" id="nameinput" required>
-                </label>
+        <article id="contentstart">
+               <div class="container">
+                  <h2>Your form has been submitted</h2>
+                  <div class="results">
+                                           <script>
+                         var formData = location.search;
+                         formData = formData.substring(1, formData.length);
+                         while (formData.indexOf("+") !== -1) {
+                            formData = formData.replace("+", " ");
+                         }
+                         formData = decodeURIComponent(formData);
+                         var formArray = formData.split("&");
+                         for (var i = 0; i < formArray.length; i = i + 1) {
+                            document.write("<p>" + formArray[i] + "</p>");
+                         }
+                     </script>
+                  </div>
+               </div>
+                    <a href="index.html"><button id ="okbutton">ok</button></a>
+            </article>
 
-                <label for ="emailinput">
-                <p>Email</p>
-                    <input type="email" name="email" id="emailinput" required>
-                </label>
-                
-                <label for="other-info">
-                <p>Feedback</p>
-                    <textarea name="other-info" id="other-info" rows="5" cols="50" required></textarea>
-                </label>
-        </fieldset>
-                
-            <fieldset>
-                <button id ="button">Submit</button>
-            </fieldset>
-        </form>
-                
-        <h1 id="formstext">MAP</h1>
-        <div id="map"></div>
-        </main>
-                   <footer id ="footercontainer">
+        <footer id = "footercontainer">
             <img id = "endlogosize" src = "confirmendlogotransparentupdated.png" alt="End logo">
         </footer>
-    <script src="script.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5SGwic0cmfnSf6kVRq6WJpBBnEVvgk_8&callback=initMap">
-    </script>
-<script src="drawer.min.js" charset="utf-8"></script>
+        
+        <script src="script.js"></script>
+<script src="drawer.min.js" charset="utf-8"></script>      
     </body>
 </html>
