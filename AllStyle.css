@@ -59,8 +59,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* start of general usage */
 body{
-    background-image: url(Images/
-        witewall_3_@2X.png);
+    background-image:url(Images/witewall_3_@2X.png)
 }
 body, html{
     height: 100%;
@@ -76,6 +75,7 @@ body, html{
     margin-top: 5%;
     height: auto;
     margin-top:5%;
+    width: 100%;
 }
 footer{
     clear: both;
@@ -361,7 +361,8 @@ aside{
 }
 
 #photosrow{
-    margin-left: 5%;
+    margin: 0;
+    width: 100%;
 }
 .photos{
     width: 100%;
