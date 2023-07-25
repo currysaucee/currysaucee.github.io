@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+            body {
+              height: 7500px;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <div id="qrcode"></div>
+
+        <img src="https://www.lovethegarden.com/sites/default/files/content/articles/UK_wildbirds-01-robin.jpg" >
+        <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlyZHxlbnwwfHwwfHw%3D&w=1000&q=80">
+        <img src="https://ontariospca.ca/wp-content/uploads/2019/03/Living-with-wildlife-birds.jpg">
+        
+
+    <script src="../dist/smartcontroller.min.js"> </script>
+
+    <script>
+        var pos = 0
+        var prevpos = 0
+        var direction = false
+        var simplePeer;
+        var joystick;
+        var coordinates = {};
+        window.addEventListener('load', function() { // I'm only using this to make sure the script is loaded so if you have a better way you can screp this line
+        simplePeer = new smartcontroller.TouchPadSmartController('123456789', firstConnected = true);
+        simplePeer.createQrCode('http://localhost:5500/src/SmartController.js', 'qrcode', 150, 150, '1');
+
+        simplePeer.on("connection", function(data){
+            console.log(simplePeer.controllerList)
+        })
+
+        simplePeer.on("data", function(data){
+            joystick = simplePeer.controllerList[1]
+
+            if (joystick.isActive){
+                ypos = joystick.state[0][1]
+
+                if (ypos > prevpos){
+                    direction = false
+                }
+                else{
+                    direction = true
+                }
+
+                console.log(direction)
+
+                prevpos = ypos
+            }
+
+            if (direction){
+                pos = -10
+
+            }
+
+            else{
+                pos = 10
+            }
+
+            window.scrollBy(0, pos);
+        })
+
+
+        })
+
+
+        
+       
+
+    </script>
+        
+    </body>
+    </html>
